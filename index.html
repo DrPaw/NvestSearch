@@ -1,0 +1,789 @@
+<!doctype html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+	<meta charset="utf-8">
+	 <link rel="icon" href="images/Nvest-Logo.png" type="image/x-icon"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Search The Financial Web | NvestSearch</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jssor.slider.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<style>
+ html {
+  scroll-behavior: smooth;
+}
+</style>
+<body>
+	<section class="customnavbr">
+		<div class="content">
+
+
+				
+
+<a href="CryptoBuyAndSell/CryptoBuyAndSellHomeguest.php"><button type="button" class="btn btn-primary btn-sm Show marketbutton">Exchange Locally</button></a>
+<a href="#market"><button type="button" class="btn btn-primary btn-sm Show marketbutton">Market</button></a>
+
+			<a href="http://trade.globalxchange.com/" id="desktop" target="_blank"> GX </a>
+
+			<a href="http://data.nvestbank.com/" id="desktop" target="_blank">Bank</a>
+
+			
+
+			<a href="#" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i><img
+					src="images/dot-01blue.jpg"></a>
+					
+					
+			<div class="dropdown-menu customdropdown" aria-labelledby="dropdownMenuButton">
+				<div class="container">
+					<div class="row" style="margin:0;">
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/GX Icon PNG.png" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/nvestsearch.png" style="margin-top: 10px;"class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/luca1.png" style="margin-top: 6px;width:85%;" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row" style="margin:0;">
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/nvestbank1.png" style="width:80%;" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/weekly live1.png" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/nvesthealth.png" style="width:80%;" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<button type="button" class="btn btn-primary btn-sm Show customshow">More</button>
+					
+					
+					<div id="target">
+					<div class="row" style="margin:0;">
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/GX Icon PNG.png" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/nvestsearch.png" style="margin-top: 10px;"class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/luca1.png" style="margin-top: 6px;width:85%;" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row" style="margin:0;">
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/GX Icon PNG.png" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/nvestsearch.png" style="margin-top: 10px;"class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col logo1">
+							<div class="imagebox">
+								<div class="insideimagebox">
+									<a href="#" target="_blank"><img src="apps logo/luca1.png" style="margin-top: 6px;width:85%;" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					</div>
+				<script>
+$('.Show').click(function() {
+    $('#target').show(500);
+    $('.Show').hide(0);
+    $('.Hide').show(0);
+});</script>
+				
+				
+					<script>
+					$(".dropdown-menu").click(function(e){
+   e.stopPropagation();
+})</script>
+				</div>
+
+			</div>
+
+
+			<span>
+				<a href="" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img src="images/NvestDNA Logo PNG).png" alt="" width="33" height="33"></a>
+				<div class="dropdown-menu customdropdown2" aria-labelledby="dropdownMenuButton2">
+				<div class="container dropdownslider">
+					<div class="CSSgal">
+
+  <!-- Don't wrap targets in parent -->
+  <s id="s1"></s> 
+  <s id="s2"></s>
+  <s id="s3"></s>
+
+  <div class="slider">
+    <div>
+	<div class="card text-center customcardbody" style="width: 15rem;">
+  <div class="card-body ">
+    <h5 class="card-title"><img src="images/shorupan1.png" ></h5>
+    <p class="card-text customname">Shorupan</p>
+	 <p class="card-text" id="p10" onclick="copyToClipboard('p1')">GXToken wallet</p>
+	 <p class="card-text" id="p1" onclick="copyToClipboard('p1')" style="display:none;">11111111111111111111</p>
+  </div>
+</div>
+</div>
+    <div>
+	<div class="card text-center customcardbody" style="width: 15rem;">
+  <div class="card-body ">
+    <h5 class="card-title"><img src="images/shorupan1.png"></h5>
+    <p class="card-text customname">Shorupan</p>
+	 <p class="card-text" id="p9" onclick="copyToClipboard('p2')">GXToken wallet</p>
+	  <p class="card-text" id="p2" onclick="copyToClipboard('p2')" style="display:none;">22222222222222222222</p>
+  </div>
+</div>
+	</div>
+    <div>
+	<div class="card text-center customcardbody" style="width: 15rem;">
+  <div class="card-body ">
+    <h5 class="card-title"><img src="images/shorupan1.png"></h5>
+    <p class="card-text customname">Shorupan</p>
+	<p class="card-text" id="p8" onclick="copyToClipboard('p3')">GXToken wallet</p>
+	 <p class="card-text" id="p3" onclick="copyToClipboard('p3')" style="display:none;">33333333333333333333333</p>
+	
+  </div>
+</div>
+</div>
+  </div>
+   <script>
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+  
+  <div class="prevNext">
+    <div><a href="#s3"><i class="fa fa-angle-left"></i></a><a href="#s2"><i class="fa fa-angle-right"></i></a></div>
+    <div><a href="#s1"><i class="fa fa-angle-left"></i></a><a href="#s3"><i class="fa fa-angle-right"></i></a></div>
+    <div><a href="#s2"><i class="fa fa-angle-left"></i></a><a href="#s4"><i class="fa fa-angle-right"></i></a></div>
+    
+  </div>
+
+  
+
+</div>
+</div>
+				</div>
+			</span>
+			<script>
+					$(".dropdown-menu").click(function(e){
+   e.stopPropagation();
+})</script>
+
+		</div>
+		
+	</section>
+
+	
+	<section class="searchcontainer">
+		<div class="container search">
+			<div class="logo">
+				<a href="#"><img src="images/LOGO.svg" class="img-fluid customlogo" alt="" /></a>
+			</div>
+
+			<div class="form-group col-md-6">
+					<form action="search.php" method="GET">
+				<div class="input-group mb-3">
+						
+					<input type="text" class="form-control inputtextcustom" placeholder="Search The Internet Of Value" id="select-this"
+						aria-label="Search The Internet Of Value" aria-describedby="button-addon2" autocomplete="off" class="searchBox" name="term">
+					<div class="input-group-append">
+							<button id="first" class="btn btn-primary searchButton"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+			
+
+				<div class="buttoncontainer">
+					<button type="submit" class="btn btn-primary searchButton">Search</button>
+					<a href="chatbox/chatbot/index.html"><button type="button" class="btn btn-primary searchButton">Luca</button></a>
+				</div>
+			</form>
+			</div>
+			<div class="textbelowsearch">
+				<a href="#" target="_blank">LEARN HOW TO MONETIZE YOUR DATA</a>
+			</div>
+		</div>
+	</section>
+	<section>
+
+
+		
+		<!-- Button trigger modal -->
+
+
+		<!-- Modal -->
+		<!-- <div class="modal fade" id="nvestpopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="parent">
+							<div class="logowithtext">
+								<img src="images/LOGO.svg" class="img-fluid customimage">
+								<div class="textfont">
+									<p>What Are You Interested In?</p>
+								</div>
+							</div>
+							<div class="servicesimage">
+								<div class="row rowcustom">
+									<div class="col-sm-4">
+										<div class="employment">
+											<img src="images/man.svg" class="img-fluid popupimage">
+											<p>Employment</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="service">
+											<img src="images/laptop.svg" class="img-fluid popupimage">
+											<p>Our Services</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="investing">
+											<img src="images/investor.svg" class="img-fluid popupimage">
+											<p>Investing</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="textwithbutton">
+								<div class="textfont">
+									<p>Don't Fall Into One Of The Above Categories? Go Straight To The Souce.</p>
+								</div>
+								<button class="btn btn-primary searchButton">Parent Company</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div> -->
+	</section>
+	<section>
+		<!-- Button trigger modal -->
+
+
+		<!-- Modal -->
+		<!-- <div class="modal fade" id="nvestpopup1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" -->
+			<!-- aria-hidden="true"> -->
+			<!-- <div class="modal-dialog" role="document"> -->
+				<!-- <div class="modal-content custommodal"> -->
+					<!-- <div class="modal-header custommodalheader"> -->
+						<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+							<!-- <span aria-hidden="true">&times;</span> -->
+						<!-- </button> -->
+					<!-- </div> -->
+					<!-- <div class="container modal-body"> -->
+						<!-- <div class="chatbox"> -->
+							<!-- <iframe allow="microphone;" height="430" -->
+								<!-- src="https://console.dialogflow.com/api-client/demo/embedded/7d3fc25e-998b-497b-b4ff-24215d010132"></iframe> -->
+						<!-- </div> -->
+						<!-- <div class="container parent1">
+							<div class="logowithtext1">
+								<img src="images/LOGO.svg" class="img-fluid customimage">
+								<div class="textfont">
+									<p>Nvest is a new paradigm in data monetization. With the Nvest Search Engine You will be able to turn
+										the data which you create everyday into an Nvestment.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="form">
+							<form>
+								<div class="form-group">
+									<label for="exampleFormControlInput1">Name</label>
+									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+									<label for="exampleFormControlInput1">Email</label>
+									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+								</div>
+
+
+								<div class="form-group">
+									<label for="exampleFormControlTextarea1">What's On Your Mind?</label>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								</div>
+								<div class="formbutton">
+									<button class="btn btn-primary submitButton">Submit</button>
+								</div>
+							</form>
+							<div class="textabovelogo">
+								<p>If You Believe In The Blockchain As Much As Us, You Would Love These Companies </p>
+							</div>
+							<div class="partnerslogo">
+								<div class="container">
+									<div class="row logorow">
+										<div class="col-sm-5 gx check">
+											<a href="http://www.globalxchange.com/">
+												<div class="imageheight">
+													<img src="images/GX_Icon_Blue_PNG.png" class="img-fluid gxicon">
+												</div>
+												<div class="textheight">
+													<p>Exchange Operating System</p>
+												</div>
+											</a>
+
+										</div>
+										<div class="col-sm-5 nvestbank check">
+											<a href="http://www.nvestbank.com/">
+												<div class="imageheight">
+													<img src="images/nvest_bank.jpg" class="img-fluid">
+												</div>
+												<div class="textheight">
+													<p>Cryptocurrency Bank</p>
+												</div>
+											</a>
+
+										</div>
+										<div class="col-sm-5 nvestweekly check">
+											<a href="https://nvestweekly.com/">
+												<div class="imageheight">
+													<img src="images/blue_logo.png" class="img-fluid">
+												</div>
+												<div class="textheight">
+													<p>Blockchain News</p>
+												</div>
+											</a>
+
+										</div>
+										<div class="col-sm-5 nvestdna check">
+											<a href="http://www.nvestdna.com/">
+												<div class="imageheight">
+													<img src="images/NvestDNA_Logo.png" class="img-fluid">
+												</div>
+												<div class="textheight">
+													<p>Identity Platform</p>
+												</div>
+											</a>
+
+										</div>
+										<div class="col-sm-5 snapmoney check">
+											<a href="http://www.accountingtool.com/">
+												<div class="imageheight">
+													<img src="images/SnapMoney_Logo_Png.png">
+												</div>
+												<div class="textheight">
+													<p>Accounting Software</p>
+												</div>
+											</a>
+
+										</div>
+										<div class="col-sm-5 nvestlab check">
+											<a href="https://www.nvestlabs.com/">
+												<div class="imageheight">
+													<img src="images/Nvest_Labs_PNG.png">
+												</div>
+												<div class="textheight">
+													<p>Research Firm</p>
+												</div>
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+
+			<!-- </div> -->
+	</section>
+	
+	
+	
+	<div class="customfixed" style="padding-top:70px;>
+	<div class="container">
+		<center>
+			<div id="jssor_1"
+				style="position:relative;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
+				<!-- Loading Screen -->
+				<div data-u="slides"
+					style="cursor:default;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+							<p id="i1" onclick="copyToClipboard('i1')" style="display:none;">Neo</p><img id="i100"  onclick="copyToClipboard('i1')" src="images/neo.png" class="img-fluid sliderlogo" />
+							</div>
+					<script>
+		jQuery("#i100").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+
+					<div class="partnerslider ">
+						
+							<div class="sliderbox">
+								<p id="i2" onclick="copyToClipboard('i2')" style="display:none;">GXT</p><img id="i99" onclick="copyToClipboard('i2')" src="images/GX.png" class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i99").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i3" onclick="copyToClipboard('i3')" style="display:none;">DASH</p><img id="i98" onclick="copyToClipboard('i3')" src="images/Dash.png" class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i98").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i4" onclick="copyToClipboard('i4')" style="display:none;">Bitcoin</p><img id="i97" onclick="copyToClipboard('i4')" src="images/BC_Logo_.png" class="img-fluid sliderlogo" />
+							</div>
+<script>
+		jQuery("#i97").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i5" onclick="copyToClipboard('i5')" style="display:none;">Ethereum</p><img id="i96" onclick="copyToClipboard('i5')" src="images/ETHEREUM-ICON_Black_small.png"
+									class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i96").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i6" onclick="copyToClipboard('i6')" style="display:none;">Litecoin</p><img id="i95" onclick="copyToClipboard('i6')"  src="images/litecoin.png" class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i95").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i7" onclick="copyToClipboard('i7')" style="display:none;">Nem</p><img id="i94" onclick="copyToClipboard('i7')" src="images/Nem.png" class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i94").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i8" onclick="copyToClipboard('i8')" style="display:none;">ZCash</p><img id="i93" onclick="copyToClipboard('i8')" src="images/zcash.png" class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i93").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i9" onclick="copyToClipboard('i9')" style="display:none;">Stellar</p><img id="i92" onclick="copyToClipboard('i9')" src="images/stellar.png" class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i92").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i10" onclick="copyToClipboard('i10')" style="display:none;">Monero</p><img id="i91" onclick="copyToClipboard('i10')" src="images/monero.png" class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i91").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+					<div class="partnerslider">
+						
+							<div class="sliderbox">
+								<p id="i11" onclick="copyToClipboard('i11')" style="display:none;">BNB</p><img id="i90" onclick="copyToClipboard('i11')"  src="images/binance.png" class="img-fluid sliderlogo" />
+							</div>
+						<script>
+		jQuery("#i90").click(function(){
+   $("#first").click()
+   return false;
+});
+		
+		</script>
+					</div>
+
+
+				</div>
+				<script>
+				function copyToClipboard(elementId) {
+
+  // Create a "hidden" input
+  var aux = document.createElement("input");
+
+  // Assign it the value of the specified element
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+  // Append it to the body
+  document.body.appendChild(aux);
+
+  // Highlight its content
+  aux.select();
+
+  // Copy the highlighted text
+  document.execCommand("copy");
+
+  // Remove it from the body
+  document.body.removeChild(aux);
+
+  let textarea = document.getElementById("select-this");
+  textarea.focus();
+  textarea.value += document.getElementById(elementId).innerHTML
+}
+				</script>
+				
+			</div>
+			<script type="text/javascript">
+				jssor_1_slider_init = function () {
+
+					var jssor_1_options = {
+						$AutoPlay: 1,
+						$Idle: 0,
+						$SlideDuration: 5000,
+						$SlideEasing: $Jease$.$Linear,
+						$PauseOnHover: 4,
+						$SlideWidth: 100,
+						$Align: 0
+					};
+
+					var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+					/*#region responsive code begin*/
+
+					var MAX_WIDTH = 980;
+
+					function ScaleSlider() {
+						var containerElement = jssor_1_slider.$Elmt.parentNode;
+						var containerWidth = containerElement.clientWidth;
+
+						if (containerWidth) {
+
+							var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+							jssor_1_slider.$ScaleWidth(expectedWidth);
+						}
+						else {
+							window.setTimeout(ScaleSlider, 30);
+						}
+					}
+
+					ScaleSlider();
+
+					$Jssor$.$AddEvent(window, "load", ScaleSlider);
+					$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+					$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+					/*#endregion responsive code end*/
+				};
+			</script>
+			<script type="text/javascript">jssor_1_slider_init();</script>
+		</center>
+		
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+    
+  
+    <section id="market">
+<!-- <div class=""> -->
+<!-- <div id="root"> -->
+<div class="table-responsive zui-scroller">
+<table class="table zui-table">
+<thead class="thead-dark" id="escalation">
+<tr>
+<th class="zui-sticky-col">#</th>
+<th class="zui-sticky-col">Coin</th>
+<!-- <th>NAME</th> -->
+<th>Price</th>
+<th>Before 24H</th>
+<th>Mkt. Cap.</th>
+<th>Vol. 24H</th>
+<th>Avl. Supply</th>
+</tr>
+</thead>
+<tbody id="tbody" class="table-bordered">
+
+</tbody>
+  </table>
+  </div>
+<div style="display: flex;justify-content: center;">
+<button id="previous" type="button" class="btn btn-outline-secondary">Previous</button>&nbsp;&nbsp;
+<button id="next" type="button" class="btn btn-outline-secondary">Next</button>
+</div>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+</section>
+
+
+<script>
+$('.Show').click(function() {
+    $('#market').show(500);
+    $('.Show').hide(0);
+    $('.Hide').show(0);
+});</script>
+
+
+<script src="js/market.js"></script>
+
+	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+a{
+text-decoration: none;
+color: aliceblue;
+}
+a:hover{
+text-decoration: none;
+color: aliceblue;
+}
+.formbuysell{
+border: 2px solid black;
+padding: 37px 10px 15px 10px;
+border-radius: 10px;
+background-color: #0D1F47;
+}
+.btnsearch{
+/* margin-top: -25px; */
+}
+.topbuysell{
+padding: 0 0 10px 0;
+}
+.toptext{
+/* text-align: center; */
+color: #FFFFFF;
+cursor: pointer; 
+background-color: #007BFF;
+padding: 8px;
+border-radius: 10px;
+}
+#tt1:active{
+color: #28A745;
+}
+#tt2:active{
+color:#dc3545;
+}
+
+
+#sell{
+display: none;
+}
+
+.hidden{
+display: none !important;
+}
+.unhidden{
+display: block !important;
+}
+
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border-bottom: 1px solid #000000;
+border-top: 1px solid #000000;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #DDDDDD;
+}
+
+.tablebuybtn{
+text-align: center !important;
+}
+.tablesellbtn{
+text-align: center !important;
+display: none;
+}
+
+.hoverWrapper:hover #hoverShow1 {
+display: block;
+}
+
+.hoverWrapper #hoverShow1 {
+display: none;
+position: absolute;
+font-size: x-small;
+background-color: #FFFFFF;
+border: 1px solid black;
+padding: 5px;
+width: 450px;
+height: 85px;
+left: 200px;
+/* top: 100px; */
+}
