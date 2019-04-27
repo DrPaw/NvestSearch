@@ -259,7 +259,7 @@ var to = document.getElementById("to").value;
 
 axios.get(`https://api.coinlayer.com/convert?access_key=e03653aa09b1c23c0474d4df8e08595b&from=${from}&to=${to}&amount=${document.getElementById("fromAmount").value}`).then(response => {
 
-document.getElementById("toAmount").value = response.data.result;
+document.getElementById("toAmount").value = (response.data.result + (response.data.result)*0.03).toFixed(2);
 
 }).catch(err => console.log(err));
 }
